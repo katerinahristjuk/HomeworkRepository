@@ -1,0 +1,136 @@
+header {
+    position: static;
+    height: 5px;
+    width: 100%;
+    background: black;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(207, 199, 205, 0.3)
+}
+
+h4 {
+    float: left;
+    margin-top: none;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    float: right;
+    padding: 20px;
+    margin-top: 0px;
+    margin-right: 25px;
+}
+
+li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.firstImg {
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.aboutCard {
+    width: 45%;
+    margin: 20px;
+    margin-top: 50px;
+    text-align: justify
+}
+
+#imageAbout {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 60% 35%;
+}
+
+.menuGrid>div {
+    margin-top: 20px;
+}
+
+#imageMenu {
+    width: 100%;
+}
+
+.menuItem {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.menuDescription {
+    margin-left: 20px;
+    color: rgba(00, 00, 00, 0.8);
+}
+
+#contact {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: justify;
+}
+
+#contact>h2 {
+    text-align: justify;
+    margin: 50px;
+}
+
+.adress {
+    color: rgb(116, 57, 67);
+    font-weight: bold;
+}
+
+.adress:hover {
+    color: rgb(196, 52, 112);
+    font-weight: bolder;
+    font-size: large;
+}
+
+input {
+    width: 95%;
+    height: 30px;
+    margin: 10px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(197, 177, 177);
+}
+
+button {
+    width: 500px;
+    height: 35px;
+    background: rgb(161, 118, 118);
+    color: lavender;
+    margin: 10px;
+    margin-top: 30px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    text-shadow: 0.5px 0.5px;
+}
