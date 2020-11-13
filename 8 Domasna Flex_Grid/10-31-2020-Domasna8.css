@@ -1,0 +1,250 @@
+body {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+#header {
+    display: grid;
+    grid-gap: 10px;
+    height: 30px;
+    grid-template-columns: 150px 890px 170px;
+    margin: 0 50px;
+}
+
+
+/* #header>div {
+    border: 2px solid black;
+} */
+
+.navlist {
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navlist:hover {
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.language {
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+.language:hover {
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#logo {
+    width: 100%;
+    float: right;
+}
+
+.redItem {
+    background: crimson;
+    border-radius: 15px;
+}
+
+#welcomeItem {
+    background-image: url(welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 50px;
+    margin: 40px 10px;
+}
+
+#welcomeItem2 {
+    /* border: 1px solid brown; */
+    margin: 30px 0 0 50px;
+    padding: 20px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.0) 100%);
+}
+
+.redButton {
+    height: 30px;
+    width: 120px;
+    margin: 0 0 0 10px;
+    border-radius: 15px;
+    border: none;
+    background: crimson;
+    color: white;
+}
+
+.redButton:hover {
+    cursor: pointer;
+    width: 123px;
+    font-weight: bold;
+}
+
+span {
+    color: crimson;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+#overline {
+    border-top: 1px solid crimson;
+    width: fit-content;
+    padding-top: 10px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.Company {
+    margin: 30px 200px;
+    text-align: center;
+    width: 70%;
+}
+
+.Company1 {
+    text-align: justify;
+}
+
+#Services {
+    display: grid;
+    grid-template-columns: 35% 64%;
+    margin: 20px 0px;
+}
+
+#leftPart {
+    background: rgb(250, 246, 246);
+    padding: 30px 0px 0px 50px;
+    text-align: justify;
+}
+
+#leftPart1 {
+    padding: 0 10px;
+}
+
+ul {
+    margin: 0;
+}
+
+.leftList {
+    list-style: none;
+    height: fit-content;
+    padding: 5px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+.leftList:hover {
+    background: crimson;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#rightPart {
+    justify-content: end;
+    background: url(img-1.jpg);
+    width: 100%;
+    z-index: -1;
+}
+
+#rightPart2 {
+    width: 500px;
+    height: 50%;
+    text-align: justify;
+    margin: 275px 100px 0px 0px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 5;
+}
+
+#Testimonials {
+    display: grid;
+    grid-template-columns: 20% 3% 75%;
+    margin: 10px 30px;
+}
+
+.roundImg {
+    width: 110px;
+    float: right;
+    border-radius: 100px;
+}
+
+#leftTestimonials {
+    text-align: center;
+}
+
+#centerTestimonials {
+    text-align: end;
+    padding: 60px 5px;
+    font-size: 3em;
+}
+
+#rightTestimonials {
+    padding: 60px 30px 0px 5px;
+    text-align: justify;
+}
+
+.signature {
+    padding: 5px 0px;
+    border-top: 3px solid crimson;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#Products {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    height: 500px;
+}
+
+#leftProducts {
+    background: url(img-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#rightProducts {
+    padding: 0px 0px 0px 10px;
+    text-align: justify;
+}
+
+#Buttons {
+    display: flex;
+    justify-content: center;
+    margin: -110px 100px 0px 100px;
+}
+
+#Buttons>div {
+    width: 200px;
+    padding: 40px 10px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px black;
+}
+
+#Button1 {
+    background: url(img-2.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+#Button2 {
+    background: url(img-3.jpg);
+    background-size: 100%;
+    color: crimson;
+}
+
+#Button3 {
+    background: url(img-1.jpg);
+    background-size: 100%;
+    color: crimson;
+}
