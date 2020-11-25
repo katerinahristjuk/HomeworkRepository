@@ -1,0 +1,128 @@
+body {
+    font-family: Roboto;
+    background-image: url(background.png);
+    padding: 0px 150px;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 5px dotted gray;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    width: fit-content;
+    margin: 0px 20px;
+    font-size: 1.3em;
+}
+
+.item:hover {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.firstImg {
+    /* border: 1px solid black; */
+    padding: 30px 0px;
+    border-bottom: 5px dotted gray;
+}
+
+.img100 {
+    width: 100%;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.flex-box>.card {
+    border: 1px solid back;
+    width: 200px;
+    ;
+}
+
+.cardPic {
+    border: 1px solid gray;
+    padding: 5px;
+    background: linen;
+    box-shadow: 2px 2px lightgray;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.welcome {
+    width: 49%;
+    padding: 10px;
+    text-align: justify;
+    border-top: 5px dotted gray;
+}
+
+h1 {
+    color: gray;
+}
+
+span {
+    height: 2em;
+    color: rgb(61, 59, 59);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+span:hover {
+    height: 2.2em;
+    color: blue;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    background-color: gray;
+    border: none;
+    font-size: 1.15em;
+    border-radius: 15px;
+}
+
+button:hover {
+    width: 155px;
+    height: 33px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.service {
+    width: 49%;
+    margin-top: 30px;
+    border-top: 5px dotted gray;
+}
+
+.rightList {
+    width: 80%;
+    display: block;
+    list-style-type: disc;
+    border-bottom: 5px dotted gray;
+    padding: 5px 0px;
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+.rightList:hover {
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(56, 54, 54);
+}
+
+.aboutCastle {
+    border-top: 5px dotted gray;
+    border-bottom: 5px dotted gray;
+    padding: 10px 30px;
+    margin: 30px 0px;
+}
