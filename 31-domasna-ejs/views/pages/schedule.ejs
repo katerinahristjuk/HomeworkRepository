@@ -1,0 +1,21 @@
+<%- include('../template/head.ejs')-%>
+
+    <body>
+        <div>
+            <%- include('../template/navbar.ejs')-%>
+
+                <main>
+                    <h1>Schedule:</h1>
+                    <ul>
+                        <% schedule.forEach((lessons) => {%>
+                            <li>
+                                <%=lessons%>
+                            </li>
+                            <%});%>
+                    </ul>
+                </main>
+                <%- include('../template/footer.ejs')-%>
+        </div>
+    </body>
+
+    </html>
