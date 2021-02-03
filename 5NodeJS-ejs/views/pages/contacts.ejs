@@ -1,0 +1,31 @@
+<%- include('../template/head')-%>
+
+    <body>
+        <div>
+            <%- include('../template/navbar.ejs')-%>
+                <main>
+                    <h1>Our Contacts:</h1>
+                    <table>
+                        <thead>
+                            <tr>Feel free to contact us!</tr>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <% contacts.forEach((entry) =>{%>
+                                <tr>
+                                    <td>
+                                        <%=entry.type%>
+                                    </td>
+                                    <td>
+                                        <%=entry.id%>
+                                    </td>
+                                </tr>
+                                <%});%>
+                        </tbody>
+                    </table>
+                </main>
+                <%- include('../template/footer.ejs')-%>
+        </div>
+    </body>
+
+    </html>
