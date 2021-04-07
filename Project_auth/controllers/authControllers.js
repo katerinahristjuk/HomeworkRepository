@@ -3,13 +3,6 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
 
 module.exports = {
-    fetch: async (req, res) =>{
-        const users = await User.find();
-        res.status(200).send({
-            error: false,
-            message: users
-        });
-    },
     register: async (req, res) => {
     try {
       if (!req.body.password || req.body.password != req.body.confirm_pass) {
@@ -82,5 +75,5 @@ login: async (req, res) => {
             message: error.message
         })
     }
-}
+},
 }

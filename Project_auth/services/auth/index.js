@@ -1,12 +1,28 @@
 const express = require('express');
 const api = express();
 const router = require('./router');
+const jwt = require('express-jwt')
 require('../../config/db');
 
 api.use(express.json());
 
-api.post('/hehe', (req, res) => {
-    res.send({message: "Post from /hehe"})
+api.use(jwt({
+    secret: 'secret_key',
+    algorithms: ['HS256']
+}).unless({
+    path: [
+        '/api/v1/auth/register',
+        '/api/v1/auth/login'
+    ]
+}));
+
+api.use((err, req, res, next)=>{
+    if(err.name === 'UnauthorizedError') {
+        res.status(401).send({
+            error: true,
+            message: 'Please log in before this action'
+        })
+    }
 })
 
 api.use('/api/v1/auth', router)
