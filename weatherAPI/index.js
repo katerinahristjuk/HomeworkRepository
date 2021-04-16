@@ -10,7 +10,7 @@ api.use(express.json());
 
 //routes
 api.get('/weather/:city', controller.getWeather);
-api.get('/weather/hourly/:city', controller.getWeather);
+api.get('/weather/hourly/:city', controller.hourlyForecast4days);
 api.get('/weather/:city/:period', controller.dailyForecast)
 
 //start
