@@ -1,7 +1,7 @@
 const fetch = require('node-fetch') 
 
-const API_KEY1 = '9b34635255ef5a43b540cfce6731b601'
-const API_KEY2 = '6d4bad294514c08579b68cad1cc54410'
+const API_KEY1 = '...'
+const API_KEY2 = '...'
 
 
 const getWeather = async (req, res)=>{
